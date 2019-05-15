@@ -15,6 +15,8 @@ def get_csv_data(filePath=None):
 def get_rootPath():
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
+
 if __name__ == "__main__":
     # print(get_rootPath())
     print(get_csv_data())

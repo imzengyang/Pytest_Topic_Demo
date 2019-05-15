@@ -8,7 +8,7 @@ class Topics(object):
         print(self.base_url)
 
     # 用户登录
-    def user_login(name='user12', password='123456'):
+    def user_login(self, name='user12', password='123456'):
         url = self.base_url + '/sign'
 
     #1. 主题首页
@@ -16,6 +16,7 @@ class Topics(object):
         url = self.base_url + '/topics'
         params = {'page':page, 'limit':limit, 'mdrender':mdrender, 'tab':tab}
         res = requests.get(url, params=params)
+        
         return res
 
     #2. 主题详情
